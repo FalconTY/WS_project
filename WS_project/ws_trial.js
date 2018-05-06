@@ -345,17 +345,8 @@ else{
     /* define debrief */
     var debrief_block = {
       type: "html-keyboard-response",
-      stimulus: function() {
-
-        var trials = jsPsych.data.get().filter({test_part: 'test'});
-        var correct_trials = trials.filter({correct: true});
-        var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
-        var averagert = Math.round(correct_trials.select('rt').mean());
-
-        return "Say something in the debrief_block about how to save and send data";
-
-      }
-    };
+      stimulus: "Hi, the main task of the experiment is finished. <br><br>However, there is one more favour to ask: in the next page the data of your peformance will be shown. <br>Please read the information (at the bottom of the next page) provided about saving the data and please send it to me.<br><br>I'm sorry to bother you with this but currently this website does not allow automatically sending data to the server. <br><br>Thank you so much!<br><br>Press any key to continue to the next page.",
+     };
     timeline.push(debrief_block);
 
     /* start the experiment */
@@ -368,7 +359,7 @@ else{
 //		jsPsych.data.displayData();
 
 		document.write(ResText);
-	document.write("<br>"+expblock.blockname+","+subname+", <br><br>Thank you so much for your participation. <br>One last favour: please copy all content in this page (press ctrl and a keys) onto a notepad and save them as a txt file named in the following format: Your name (the same you entered at the beginning).txt <br>Please send this txt file to y.tao286@foxmail.com <br><br>Thank you so much again!");
+	document.write("<br>"+expblock.blockname+","+subname+", <br><br><div style='font-size:20; color:blue;'>Thank you so much for your participation. <br>One last favour: please copy all content in this page (press ctrl and a keys) onto a notepad and save them as a txt file named in the following format: Your name (the same you entered at the beginning).txt <br>Please send this txt file to y.tao286@foxmail.com <br><br>Thank you so much again!</div>");
       }
     });
 

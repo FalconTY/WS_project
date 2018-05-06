@@ -36,14 +36,14 @@ var n_lw_Ap=["conference"];
 var n_lw_Bp=["judgmental"];
 var n_ln_Ap=["pmteston"];
 var n_ln_Bp=["klerstion"];
-var list_sw_Ap=iteminfo(n_sw_Ap, 2, "swAp_","Yes");   
-var list_sw_Bp=iteminfo(n_sw_Bp, 2, "swBp_","Yes");
-var list_lw_Ap=iteminfo(n_lw_Ap, 2, "lwAp_","Yes");
-var list_lw_Bp=iteminfo(n_lw_Bp, 2, "lwBp_","Yes");
-var list_sn_Ap=iteminfo(n_sn_Ap, 2, "snAp_","No");
-var list_sn_Bp=iteminfo(n_sn_Bp, 2, "snBp_","No");
-var list_ln_Ap=iteminfo(n_ln_Ap, 2, "lnAp_","No");
-var list_ln_Bp=iteminfo(n_ln_Bp, 2, "lnBp_","No");
+var list_sw_Ap=iteminfo(n_sw_Ap, 2.8, "swAp_","Yes");   
+var list_sw_Bp=iteminfo(n_sw_Bp, 2.8, "swBp_","Yes");
+var list_lw_Ap=iteminfo(n_lw_Ap, 2.8, "lwAp_","Yes");
+var list_lw_Bp=iteminfo(n_lw_Bp, 2.8, "lwBp_","Yes");
+var list_sn_Ap=iteminfo(n_sn_Ap, 2.8, "snAp_","No");
+var list_sn_Bp=iteminfo(n_sn_Bp, 2.8, "snBp_","No");
+var list_ln_Ap=iteminfo(n_ln_Ap, 2.8, "lnAp_","No");
+var list_ln_Bp=iteminfo(n_ln_Bp, 2.8, "lnBp_","No");
 var pblock=materialversion(list_sw_Ap,list_lw_Ap,list_sw_Bp,list_lw_Bp,list_sn_Ap,list_ln_Ap,list_sn_Bp,list_ln_Bp);
 pblock.versionname="practiceblock";
 
@@ -87,14 +87,14 @@ for (i=0; i<itemarray.length;i++)
 }
 
 
-var list_sw_A=iteminfo(n_sw_A, 2, "swA_","Yes");   
-var list_sw_B=iteminfo(n_sw_B, 2, "swB_","Yes");
-var list_lw_A=iteminfo(n_lw_A, 2, "lwA_","Yes");
-var list_lw_B=iteminfo(n_lw_B, 2, "lwB_","Yes");
-var list_sn_A=iteminfo(n_sn_A, 2, "snA_","No");
-var list_sn_B=iteminfo(n_sn_B, 2, "snB_","No");
-var list_ln_A=iteminfo(n_ln_A, 2, "lnA_","No");
-var list_ln_B=iteminfo(n_ln_B, 2, "lnB_","No");
+var list_sw_A=iteminfo(n_sw_A, 2.8, "swA_","Yes");   
+var list_sw_B=iteminfo(n_sw_B, 2.8, "swB_","Yes");
+var list_lw_A=iteminfo(n_lw_A, 2.8, "lwA_","Yes");
+var list_lw_B=iteminfo(n_lw_B, 2.8, "lwB_","Yes");
+var list_sn_A=iteminfo(n_sn_A, 2.8, "snA_","No");
+var list_sn_B=iteminfo(n_sn_B, 2.8, "snB_","No");
+var list_ln_A=iteminfo(n_ln_A, 2.8, "lnA_","No");
+var list_ln_B=iteminfo(n_ln_B, 2.8, "lnB_","No");
 
 	function materialversion(nsw,nlw,tsw,tlw,nsn,nln,tsn,tln){
 	var materials={
